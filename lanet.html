@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Recursos de la empresa</title>
+  <link type="text/css" rel="stylesheet" href="css.css" />
+</head>
+<header>
+  <section>
+    <img id='logo' src="img/logo.png">
+	<h4>Area de professorat</h4>
+	<h4>Bienvenido: <?php echo $_SESSION['nickname_usuari']; ?>
+  </section>
+  <section>
+    <button id='boton' type="submit" title="Inicio" class="button" onclick='window.open("salir.php")'>LOGOUT</button>
+  </section>
+
+</header>
+<body id='bg'>
+<section>
+    <h1>RECURSOS</h1>
+    <section class="recursos">
+      <button class="menu" onclick="resultado9()">Els meus recursos</button></br><br>
+      <button class="menu" onclick="resultado1()">Aules de teoría</button></br><br>
+      <button class="menu" onclick="resultado2()">Aules d'informatica</button></br><br>
+      <button class="menu" onclick="resultado3()">Despatxos d'entrevistas</button></br><br>
+      <button class="menu" onclick="resultado4()">Sala de reunions</button></br><br>
+      <button class="menu" onclick="resultado5()">Projector portàtil</button></br><br>
+      <button class="menu" onclick="resultado6()">Carro de portàtils</button></br><br>
+      <button class="menu" onclick="resultado7()">Portàtils</button></br><br>
+      <button class="menu" onclick="resultado8()">Mòbils</button></br><br>
+    </section>
+    <section class="formulario">
+      <article id="scroll"></br><br>
+          
+
+
+
+      </article>
+    </section>
+</section>
+<footer class="footer">
+<section>
+</br><br>
+<h2>Escola St.Parrón Cruz Salvador</h2>
+<h4>Ensenyament de cualitat desde 1995</h4>
+<h5>copyright St. Parrón Cruz Salvador 1995</h5>
+</section>
+<section class="spe">
+  <img src="img/fb.png">
+  <img src="img/tw.png">
+  <img src="img/ins.png">
+  <img src="img/gm.png">
+</section>
+<section id="footer">
+  <h4>Fundació St.ParrónCruzSalvador</h4>
+  <h4>Avís legal</h4>
+  <h4>Política de privacitat</h4>
+  <h4>Contacte</h4>
+</section>
+</footer>
+</body>
+</html>

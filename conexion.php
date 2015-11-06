@@ -1,6 +1,6 @@
 <!-- conexion a la base de datos -->
 <?php
-/*session_start();*/
+session_start();
 $servidor = 'localhost';
 $usuario = 'root';
 $password = 'DAW22015';

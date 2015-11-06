@@ -13,45 +13,41 @@ error_reporting(E_ALL^E_NOTICE);
 		if(formulario.usuari.value.length==0 && formulario.clave.value.length==0) {
 			formulario.usuari.focus();
 			formulario.clave.focus();
-			alert('Los campos estan vacios, debes introducir tu usuario y contraseña');
+			alert('Els camps estàn buits, introdueix nom i contrasenya');
 		return false;
 		}
 		if(formulario.usuari.value.length==0) {
 			formulario.usuari.focus();
-			alert('Debes introducir tu nombre de usuario.');
+			alert('Introdueix usuari');
 		return false;
 		}
 		if(formulario.clave.value.length==0) {
 			formulario.clave.focus();
-			alert('Debes introducir tu contraseña.');
+			alert('DIntrodueix contrasenya');
 		return false;
 		}
 		return true;
 		}
 </script>
 </head>
-<body>
-<div id="header">
-</div>
+<body background="img/bgini.jpg">
 <div id="cuerpo">
 <!-- pagina mensaje de inicio de sesion -->
-<?php 
-if($_SESSION['nickname_usuari']){?> 
-<h1>Escola st.ParronCruzSalvador</h1>
-<h3>Bienvenido: <?php echo $_SESSION['nickname_usuari']; ?>
-<h2>Area de professorat</h2>
-<h3><a href="salir.php">Salir</a></h3>
+<?php
+if($_SESSION['nickname_usuari']){?>
+<a href="lanet.html"></a>
+
 <?php }else{?>
 	<!-- formulario de loguin -->
 	<div id="login">
     <br />
     <form action="entrar.php" method="post" onsubmit="return validarForm(this);" >
-    	<b>Identificación de usuario:</b><br />
+    	<b>Identificació de usuari:</b><br /><br>
         <!--<input type="text" placeholder="Correo electronico..." name="correo" id="texto"/><br />-->
-		<input type="text" placeholder="Nombre usuario..." name="usuari" id="texto" required/><br />
-        <input type="password" placeholder="Clave acceso..." name="clave" id="texto" required/><br />
-        <input type="submit" name="submit" value="Identificarme" />
-		<input type="reset" value="Borrar">
+		<input type="text" placeholder="Nom usuari..." name="usuari" id="rec" required/></br><br>
+        <input type="password" placeholder="Clau accés..." name="clave" id="rec" required/></br><br>
+        <input type="submit" name="submit" value="Entrar" id="boton">
+		<input type="reset" value="Borrar" id="boton">
         </form>
     </div>
 <?php } ?>

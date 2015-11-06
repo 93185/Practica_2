@@ -13,7 +13,7 @@ $query = mysql_query($consulta,$conexion);
 se notifica y volvemos a la pagina principal del formulario */ 
 if($row = mysql_fetch_assoc($query)){
 	$_SESSION['nickname_usuari'] = $row['nickname_usuari'];
-	header('Location: index.php?id=conectado');
+	header('Location: lanet.html?id=conectado');
 	} else {
 	echo"<script type='text/javascript'>
 		alert('El usuario o la contraseña son incorrectos. Vuelve a intentarlo!!!');
